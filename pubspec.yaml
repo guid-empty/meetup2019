@@ -1,0 +1,34 @@
+name: raw_graphics
+description: Raw graphics
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flare_flutter: ^1.5.8
+  smart_flare: ^0.2.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/flare/justtry.actions.panel.flr
+    - assets/flare/justtry.squares.flr
+    - assets/flare/justtry.basics.clipping.flr
+    - assets/flare/justtry.basics.strokes.flr
+
+  fonts:
+    - family: Billy
+      fonts:
+        - asset: assets/font.ttf

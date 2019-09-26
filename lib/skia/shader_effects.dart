@@ -1,6 +1,8 @@
 import 'dart:ui';
 import 'dart:math';
 
+import 'package:flutter/material.dart' as material;
+
 void main() {
   window.onBeginFrame = beginFrame;
   window.scheduleFrame();
@@ -27,8 +29,10 @@ void beginFrame(Duration timeStamp) {
     ..strokeWidth = 2
     ..strokeCap = StrokeCap.round
     ..color = const Color(0xff4285F4)
-    ..shader = Gradient.linear(Offset.zero, Offset(256, 256),
-        <Color>[Color.fromARGB(255, 66, 133, 244), Color.fromARGB(255, 15, 157, 88)], null, TileMode.clamp);
+    ..shader = Gradient.linear(Offset.zero, Offset(200, 0),
+        <Color>[
+          material.Colors.red,
+          material.Colors.blue], null, TileMode.clamp);
 
   Path path = star();
   canvas.drawPath(path, paint);

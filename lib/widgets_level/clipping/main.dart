@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     //return getStep03(context);
     //return getStep04(context);
 
-    return getStep06(context);
+    return getStep05(context);
   }
 
   Widget getStep01(BuildContext context) {

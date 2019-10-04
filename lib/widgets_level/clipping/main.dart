@@ -101,8 +101,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     //return getStep02(context);
     //return getStep03(context);
     //return getStep04(context);
+    //return getStep05(context);
 
-    return getStep05(context);
+    return getStep06(context);
   }
 
   Widget getStep01(BuildContext context) {
@@ -248,25 +249,22 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               left: 0,
               height: 200,
               width: size.width,
-              child:
-//              ClipPath(
-//                clipper: CircleClipper(),
-//                child:
-
-                CustomPaint(
+              child: ClipPath(
+                clipper: CircleClipper(),
+                child: CustomPaint(
                   size: Size(200, 200),
                   painter: WavePainter(animationController: animationController),
                 ),
-              //),
+              ),
             ),
-//            Positioned(
-//              top: (size.height / 2 - 100),
-//              left: size.width / 2 - 100,
-//              child: CustomPaint(
-//                size: Size(200, 200),
-//                painter: CirclePainter(),
-//              ),
-//            ),
+            Positioned(
+              top: (size.height / 2 - 100),
+              left: size.width / 2 - 100,
+              child: CustomPaint(
+                size: Size(200, 200),
+                painter: CirclePainter(),
+              ),
+            ),
           ],
         ),
       ),
